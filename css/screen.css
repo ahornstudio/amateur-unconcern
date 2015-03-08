@@ -1851,7 +1851,7 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 20, ../sass/_mixins.scss */
+/* line 23, ../sass/_mixins.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -1861,17 +1861,17 @@ td.visible-print {
   height: 0;
 }
 
-/* line 29, ../sass/_mixins.scss */
+/* line 32, ../sass/_mixins.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 33, ../sass/_mixins.scss */
+/* line 36, ../sass/_mixins.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 40, ../sass/_mixins.scss */
 * html .clearfix {
   height: 1%;
 }
@@ -2095,39 +2095,59 @@ nav ul li a:hover, nav ul li a.active {
   width: 100%;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
+.characters h4 {
+  font-family: "freight-sans-pro", helvetica, arial, sans-serif;
+}
+/* line 216, ../sass/screen.scss */
+.characters ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 222, ../sass/screen.scss */
+.characters ul li {
+  margin-bottom: 0.5em;
+}
+/* line 223, ../sass/screen.scss */
+.characters ul li strong {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 232, ../sass/screen.scss */
 .light-grey {
   background: #efefef;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .mid-grey {
   background: #76756c;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .text p {
   margin-top: 0;
   margin-bottom: 0.7em;
   font-size: 1.3em;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .image-quote {
   padding: 3em 0;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .chapter {
   background: #f0ede5;
 }
-/* line 233, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .chapter h1 {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
 }
-/* line 238, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .chapter h1.chapterhead {
   width: 84px;
   height: 150px;
@@ -2136,71 +2156,98 @@ nav ul li a:hover, nav ul li a.active {
   text-indent: -999em;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  /* line 238, ../sass/screen.scss */
+  /* line 262, ../sass/screen.scss */
   .chapter h1.chapterhead {
     background-image: url('../assets/chapter-head@2x.png?1424625856');
     background-size: 45px 77px;
   }
 }
-/* line 248, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .chapter .chaptercard {
   max-width: 50%;
   text-align: center;
   margin: 0 auto;
 }
-/* line 253, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .chapter .chaptercard p {
   font-size: 1.2em;
   font-family: "freight-sans-pro", helvetica, arial, sans-serif;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 blockquote {
   margin: 0;
 }
-/* line 267, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 blockquote .left {
   text-align: left;
 }
-/* line 271, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 blockquote .right {
   text-align: right;
 }
-/* line 275, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 blockquote .dark {
   color: #202020;
 }
-/* line 279, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 blockquote .white {
   color: #efefef;
 }
-/* line 283, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 blockquote p {
   color: #efefef;
   font-weight: light;
   font-size: 1.4em;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .photos {
   border-bottom: 1px dashed #3c3c3c;
   padding: 4.5em 0;
   background: #000;
 }
-/* line 295, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .photos p {
-  color: #fff;
+  color: #ccc;
 }
-/* line 303, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .photos.green {
   background: #484b44;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .full-quote {
   background: #bfbfbf;
 }
-/* line 313, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .full-quote blockquote p {
   color: #202020;
+}
+
+/* line 342, ../sass/screen.scss */
+.continue {
+  width: 100%;
+  text-align: center;
+}
+/* line 347, ../sass/screen.scss */
+.continue a {
+  position: relative;
+  text-align: center;
+  margin: 3em auto;
+  background: #f2efe0;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 4em;
+  color: #202020;
+  line-height: 2em;
+  font-size: 2em;
+  font-family: "freight-sans-pro", helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+/* line 362, ../sass/screen.scss */
+.continue a:hover {
+  background: #d4ca98;
+  text-decoration: none;
 }

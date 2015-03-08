@@ -7,8 +7,10 @@ include: [a, c, j]
 excerpt_separator: ""
 safe: false
 navigation:
-- text: Intro
+- text: Title
   url: index.html
+- text: Intro
+  url: intro.html
 - text: Act I
   url: act1.html
 - text: Act II
@@ -21,3 +23,5 @@ navigation:
   url: act5.html
 - text: End
   url: end.html
+- text: Credits
+  url: credits.html

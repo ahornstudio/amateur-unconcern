@@ -50,7 +50,7 @@ small {
 nav {
 	position:fixed;
 	top:0;
-	background:#f2efe0;
+	background:$light-brown;
 	width:100%;	
 	border-bottom:1px solid lighten(#654f3b,50%);			
 
@@ -205,6 +205,30 @@ nav {
 	}
 }
 
+// CHARACTERS.
+
+.characters {
+
+	h4 {
+		font-family:$sans-serif;
+	}
+
+	ul {
+		margin:0;
+		padding:0;
+		
+		list-style:none;
+		
+		li {
+			strong {
+				font-weight:normal;
+				text-transform:uppercase;
+			}
+			margin-bottom:0.5em;
+		}
+	}
+}
+
 .light-grey {
 	background:$light-grey;
 }
@@ -293,7 +317,7 @@ blockquote {
 	background:$super-black;
 	
 	p {
-		color:$white;
+		color:$off-white;
 	}
 	
 	blockquote {
@@ -303,7 +327,6 @@ blockquote {
 	&.green {
 		background:#484b44;
 	}
-	
 }
 
 .full-quote {
@@ -314,5 +337,32 @@ blockquote {
 			color:$black;
 		}
 	}
+}
+
+.continue {
 	
+	width:100%;
+	text-align:center;
+	
+	a {
+		position:relative;
+		text-align:center;
+		margin:3em auto;
+		background:$light-brown;
+		display:inline-block;
+		width:2em;
+		height:2em;
+		border-radius:4em;
+		color:$black;
+		line-height:2em;
+		font-size:2em;				
+		font-family:$sans-serif;
+		font-weight:bold;
+		
+		&:hover {
+			background:darken($light-brown,20%);
+			text-decoration:none;
+		}
+		
+	}	
 }
