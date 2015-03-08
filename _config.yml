@@ -8,20 +8,20 @@ excerpt_separator: ""
 safe: false
 navigation:
 - text: Title
-  url: index.html
+  url: /
 - text: Intro
-  url: intro.html
+  url: /intro
 - text: Act I
-  url: act1.html
+  url: /act1
 - text: Act II
-  url: act2.html
+  url: /act2
 - text: Act III
-  url: act3.html
+  url: /act3
 - text: Act IV
-  url: act4.html
+  url: /act4
 - text: Act V
-  url: act5.html
+  url: /act5
 - text: End
-  url: end.html
+  url: /end
 - text: Credits
-  url: credits.html
+  url: /credits
