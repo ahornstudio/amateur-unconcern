@@ -3,6 +3,8 @@ $(document).ready(function() {
 	centerVertical();
 	
 	$("#warning").backstretch("/photos/act2-part6-a.jpg");
+	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
+	
 	
 });
 

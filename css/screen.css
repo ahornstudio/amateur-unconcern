@@ -2216,21 +2216,21 @@ blockquote p {
   background: #484b44;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .full-quote {
   background: #bfbfbf;
 }
-/* line 336, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .full-quote blockquote p {
   color: #202020;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .continue {
   width: 100%;
   text-align: center;
 }
-/* line 347, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .continue a {
   position: relative;
   text-align: center;
@@ -2246,8 +2246,21 @@ blockquote p {
   font-family: "freight-sans-pro", helvetica, arial, sans-serif;
   font-weight: bold;
 }
-/* line 362, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .continue a:hover {
   background: #d4ca98;
   text-decoration: none;
+}
+
+/* line 373, ../sass/screen.scss */
+.panel.light {
+  background: #f2efe0;
+}
+/* line 376, ../sass/screen.scss */
+.panel.light blockquote {
+  color: #202020;
+}
+/* line 379, ../sass/screen.scss */
+.panel.light blockquote p {
+  color: #202020;
 }

@@ -329,6 +329,8 @@ blockquote {
 	}
 }
 
+
+
 .full-quote {
 	background:#bfbfbf;	
 	
@@ -365,4 +367,19 @@ blockquote {
 		}
 		
 	}	
+}
+
+.panel {
+	&.light {
+		background:$light-brown;
+		
+		blockquote {
+			color:$black;
+			
+			p {
+				color:$black;
+			}
+		}
+		
+	}
 }
