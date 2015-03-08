@@ -1,0 +1,23 @@
+pygments: true
+permalink: /:categories/:title
+url: http://photocaptionist.com
+markdown: kramdown
+main_title: "A Photo-Literary Fantasia. By the Photocaptionist"
+include: [a, c, j]
+excerpt_separator: ""
+safe: false
+navigation:
+- text: Intro
+  url: index.html
+- text: Act I
+  url: act1.html
+- text: Act II
+  url: act2.html
+- text: Act III
+  url: act3.html
+- text: Act IV
+  url: act4.html
+- text: Act V
+  url: act5.html
+- text: End
+  url: end.html

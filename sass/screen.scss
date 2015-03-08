@@ -1,0 +1,318 @@
+/*
+*************************************************
+Photocaptionist: Amateur Exhibition site
+General Screen Styles
+Version 1
+Created by the soldiers at Good Caesar
+http://www.goodcaesar.com
+london@goodcaesar.com
+**************************************************/
+
+@import "bootstrap";
+@import "mixins";
+
+html {
+	height: 100%;
+}
+		
+/** 
+ * General stuff
+ */
+
+body {
+	font-family:$serif;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+small {
+	display:block;
+	margin:0.3em 0;
+	font-size:110%;
+}
+
+.pull-center {
+	text-align:center;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+/** 
+ * Navigation & Header
+ */	
+
+
+// NAV
+
+nav {
+	position:fixed;
+	top:0;
+	background:#f2efe0;
+	width:100%;	
+	border-bottom:1px solid lighten(#654f3b,50%);			
+
+	@media (min-width: $screen-sm-min){
+		width:80px;
+		left:0;		
+		height:100%;	
+		border-right:1px solid lighten(#654f3b,50%);		
+	}
+
+	z-index:200;
+
+	h1 {
+		float:left;
+		margin:0;
+		padding:0;
+		
+		@media (min-width: $screen-sm-min){
+			float:none;
+			text-align:center;
+			padding:0.2em;
+			margin:0.2em 0;
+		}
+	
+		&#sitename {
+			a {
+				float:left;
+				@include at2x('p-logo-mobile',25px,45px);
+				width:25px;
+				height:45px;
+				text-indent:-999em;
+				background-repeat:no-repeat;			
+				display:block;				
+			
+				@media (min-width: $screen-sm-min){		
+					float:none;		
+					width:45px;
+					height:77px;
+					@include at2x('p-logo',45px,81px);
+				}
+			}
+		}
+	}
+	
+	ul {
+		float:right;
+		@media (min-width: $screen-sm-min){
+			float:none;
+		}
+		
+		margin:0;
+		padding:0;
+		li {
+			list-style:none;
+			margin:0;
+			text-align:center;
+			font-size:1.3em;
+			padding:0;
+			text-transform:uppercase;
+			
+			display:block;
+			float:left;
+						
+			@media (min-width: $screen-sm-min){
+				float:none;
+			}
+			
+			a {
+				vertical-align:top;
+				color:#666;
+				display:block;
+
+				float:left;
+				
+				@media (min-width: $screen-sm-min){					
+					float:none;
+					border-bottom:1px solid lighten(#654f3b,50%);					
+				}
+				
+				padding:0.55em 0.3em;
+				text-shadow: 0px 1px 1px lighten(#654f3b,50%);
+				
+				&:hover,
+				&.active {
+					text-decoration:none;
+					background:darken(#f2efe0,20%);
+					color:$black;
+				}
+			}
+		}
+	}	
+}
+
+#content {	
+	@media (min-width: $screen-sm-min){
+		margin-left:80px;
+	}
+}
+
+// INTRO
+
+#intro {
+	padding:2em 0;
+	background:url(../assets/intro-pattern.jpg);
+}
+
+.welcome {
+	border:1px solid #473c38;
+	background:#c6af82;
+	padding:0.5em;
+	@media (min-width: $screen-sm-min){		
+		width:50%;
+	}
+	margin:0 auto;
+	text-align:center;
+	
+	h1,h2 {
+		text-shadow: 0px 1px 1px lighten(#654f3b,50%);		
+		color:#473c38;
+		font-weight:normal;
+	}
+	
+	h1 {
+		margin-top:1em;
+		span {
+			border-bottom:2px dashed #473c38;		
+		}
+	
+		margin:1em 0 0.5em 0;
+		padding:0;
+		text-transform:uppercase;
+	}
+	
+	h2 {		
+		margin:0 0 1.5em 0;
+	}	
+	
+	.line {
+		overflow:hidden;
+		
+		&:before {
+			text-shadow: 0px 1px 1px lighten(#000,50%);		
+			content:'XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXXO';
+			width:100%;			
+		}
+	
+		margin: 0;
+		font-size:1.1em;
+		display:block;
+		width:100;
+		color:lighten(#473c38,5%);
+	}
+}
+
+.light-grey {
+	background:$light-grey;
+}
+
+.mid-grey {
+	background:$mid-grey;
+}
+
+.text {
+	p {
+		margin-top:0;
+		margin-bottom:0.7em;
+		font-size:1.3em;
+	}
+}
+
+.image-quote {
+	padding:3em 0;
+}
+
+
+// CHAPTER INTRO
+.chapter {
+	background:#f0ede5;
+	
+	h1 {
+		text-align:center;
+		display:inline-block;
+		margin:0 auto;
+		
+		&.chapterhead {
+			width:84px;
+			height:150px;
+			@include at2x('chapter-head',45px,77px);
+			display:block;
+			text-indent:-999em;
+			
+		}
+	}
+	
+	.chaptercard {
+		max-width:50%;
+		text-align:center;
+		margin:0 auto;
+		
+		p {
+			font-size:1.2em;
+			font-family:$sans-serif;		
+		}
+	}	
+}
+
+
+// BLOCKQUOTES
+
+blockquote {
+	
+	margin:0;
+	
+	.left {
+		text-align:left;
+	}
+	
+	.right {
+		text-align:right;
+	}
+
+	.dark {
+		color:$black;
+	}
+	
+	.white {
+		color:$light-grey;
+	}
+	
+	p {
+		color:$light-grey;		
+		font-weight:light;
+		font-size:1.4em;
+	}
+}
+
+.photos {
+	border-bottom:1px dashed $dark-grey;
+	padding:4.5em 0;
+	background:$super-black;
+	
+	p {
+		color:$white;
+	}
+	
+	blockquote {
+	
+	}
+	
+	&.green {
+		background:#484b44;
+	}
+	
+}
+
+.full-quote {
+	background:#bfbfbf;	
+	
+	blockquote {
+		p {
+			color:$black;
+		}
+	}
+	
+}
