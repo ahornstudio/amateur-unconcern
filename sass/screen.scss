@@ -465,6 +465,10 @@ blockquote {
 	padding:50px;
 }
 
+.extra-text-padding {
+	padding:100px 50px;
+}
+
 .full-width-image {
 	#warning {
 		
@@ -484,6 +488,9 @@ blockquote {
 .flowers-bg {
 
 	background:url(../assets/intro-pattern.jpg);
+	border-bottom:1px solid $yellow;
+	border-top:1px solid $yellow;
+	
 }
 
 .rabbits-bg {
@@ -498,6 +505,7 @@ blockquote {
 	            background-size: 100px 71px;
 	       }
 	}
+	
 	
 }
 
@@ -651,26 +659,10 @@ blockquote {
 	opacity:0.4;
 }	
 	
-//	hr.carved {
-//	  clear: both; 
-//	  float: none; 
-//	  width: 80%; 
-//	  height: 2px;
-//	  margin: 1.4em 0;
-//	  border: none; 
-//	  background: ;
-//	  background-image: -webkit-gradient(
-//	      linear,
-//	      left top,
-//	      left bottom,
-//	      color-stop(0.5, rgb(221,221,221)),
-//	      color-stop(0.5, rgb(255,255,255))
-//	  );
-//	  background-image: -moz-linear-gradient(
-//	      center top,
-//	      rgb(221,221,221) 50%,
-//	      rgb(255,255,255) 50%
-//	  );
-//	}
-	
+.shadowed {
+    -webkit-filter: drop-shadow(4px 4px 12px rgba(0,0,0,0.4));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
 	
