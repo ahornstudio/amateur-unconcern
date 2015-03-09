@@ -21,7 +21,5 @@ navigation:
   url: /act4
 - text: Act V
   url: /act5
-- text: End
-  url: /end
 - text: Credits
   url: /credits
