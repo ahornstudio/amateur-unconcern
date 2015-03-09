@@ -1,11 +1,11 @@
 <nav>			
 	
-	<h1 id="sitename"><a href="#">Amateur Unconcern</h1>	
+	<h1 id="sitename"><a href="#">Amateur Unconcern</a></h1>	
 												
 	<ul>
 	{% for post in site.navigation %}
 	    {% assign class = nil %}
-	    {% if page.url contains post.url %}
+	    {% if page.url == post.url %}
 	        {% assign class = 'active' %}
 	    {% endif %}
 	    <li><a href="{{ post.url }}" class="{{ class }}">

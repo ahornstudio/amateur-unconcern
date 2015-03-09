@@ -6,15 +6,42 @@ $(document).ready(function() {
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
 	
 	
-//	$('picture.hascaption').captionjs({
-//	       'class_name'      : 'captionjs', // Class name for each <figure>
-//	       'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
-//	       'mode'            : 'default',   // default | stacked | animated | hide
-//	       'debug_mode'      : false,       // Output debug info to the JS console
-//	       'force_dimensions': true,        // Force the dimensions in case they cannot be detected (e.g., image is not yet painted to viewport)
-//	       'is_responsive'   : true,       // Ensure the figure and image change size when in responsive layout. Requires a container to control responsiveness!
-//	       'inherit_styles'  : false        // Have the caption.js container inherit box-model properties from the original image
-//	   });	
+	
+	$(window).keydown(function(e) {
+		    
+		    var $targetElement;
+		    //down
+		    if (e.keyCode == 40) {
+		    	e.preventDefault(); //prevent default arrow key behavior
+		    	
+		        $targetElement = $('.active_section').next('section');
+		    }
+		    //up
+		    else if (e.keyCode == 38) {
+		    	e.preventDefault(); //prevent default arrow key behavior
+		    	
+		        $targetElement = $('.active_section').prev('section');
+		    } else {
+		    
+		    return;
+		    
+		    }
+		    
+		    $('.active_section').removeClass('active_section');
+		    $targetElement.addClass('active_section');
+		
+		    //scroll element into view    
+		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+		});
+	
+	
+		$("section").each(function() {
+				$(this).mouseenter(function() {
+					$(".active_section").removeClass("active_section");
+					$(this).addClass("active_section");
+				});
+			} );	
+	
 });
 
 //Every resize of window
@@ -43,4 +70,32 @@ function centerVertical() {
 	console.log(newmargin);
 	
     $(".vertical-center").css("margin-top",newmargin);
+}
+
+
+
+
+var moveToNextSlide = function() {
+	
+		    var $targetElement;
+		   
+		    $targetElement = $('.active_section').next('section');
+		    
+		    if (!$targetElement.length) {return;}
+		    $('.active_section').removeClass('active_section');
+		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+			
+			
+}
+
+var moveToPrevSlide = function() {
+	
+		    var $targetElement;
+		    $targetElement = $('.active_section').prev('section');
+		    
+		    if (!$targetElement.length) {return;}
+		    $('.active_section').removeClass('active_section');
+		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+					
+			
 }
