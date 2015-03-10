@@ -140,12 +140,16 @@ nav {
 			
 			a {
 				vertical-align:top;
-				color:#666;
 				display:block;
 				float:left;
 				width:100%;
+				color:lighten(#654f3b,30%);
 				text-align:center;
-								
+				
+				&:visited {
+					color:#654f3b;
+				}
+												
 				@include transition(0.4s,all,ease);
 				
 				@media (min-width: $screen-sm-min){					
@@ -195,11 +199,7 @@ nav {
 }
 
 #content {	
-	margin-top:50px;
-
-	section:first-child {
-		padding-top:80px;
-	}
+	margin-top:70px;
 
 	@media (min-width: $screen-sm-min){
 		
@@ -384,11 +384,11 @@ nav {
 	.chaptercard {
 	
 		max-width:80%;
-		
+		padding-top:1em;
 	
 		@media (min-width: $screen-sm-min) {
 			max-width:50%;
-			
+			padding-top:0;
 		}
 	
 		text-align:center;
@@ -561,7 +561,7 @@ blockquote {
 
 
 .text-padding {
-	padding:0.5em;
+	padding:1em;
 	@media (min-width:$screen-sm-min) {
 		padding:50px;
 	}
@@ -803,16 +803,13 @@ blockquote {
 	
 .shadowed {
     -webkit-filter: drop-shadow(4px 4px 12px rgba(0,0,0,0.3));
-    filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=12, Color='#444')";
 }
 
 .floating-image {
-
 	position:absolute;
-	top:15%;
-	
+	top:15%;	
 }
 
 #on-text {
