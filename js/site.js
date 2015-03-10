@@ -68,15 +68,17 @@ $(window).resize(function() {
 	centerVertical();
 });
 
-
-
 //Dynamically assign height
 function sizeContent() {
-    //var newHeight = $("html").height() + "px";
-	
-	var newHeight = $(window).height();
-	$("section.full-height").css("height", newHeight);
 
+	var current_width = $(window).width();
+
+    //var newHeight = $("html").height() + "px";	
+	var newHeight = $(window).height();
+	
+	if(current_width > 480) {	
+		$("section.full-height").css("height", newHeight);
+	}
 }
 
 function centerVertical() {
@@ -85,11 +87,11 @@ function centerVertical() {
 	
 	var newmargin = $("html").height() / 2 - halfitem + "px";
 	//var topmargin = fullheight - $('.vertical-center').height() + 'px';	
+	var current_width = $(window).width();	
 	
-	console.log(halfitem);
-	console.log(newmargin);
-	
-    $(".vertical-center").css("margin-top",newmargin);
+	if(current_width > 480) {	
+    	$(".vertical-center").css("margin-top",newmargin);
+    }
 }
 
 

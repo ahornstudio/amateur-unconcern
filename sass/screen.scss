@@ -107,10 +107,11 @@ nav {
 			float:none;
 			width:100%;
 			text-align:center;
-		}
-		
-		li:first-child {
-			border-top:1px solid rgba($yellow,0.2);
+			
+			li:first-child {
+				border-top:1px solid rgba($yellow,0.2);
+			}
+			
 		}
 		
 		margin:0;
@@ -120,17 +121,18 @@ nav {
 			list-style:none;
 			margin:0;
 			text-align:right;
-			//float:right;
-			margin-right:2px;
 			
 			font-size:1em;
 			padding:0;
 			text-transform:uppercase;
+
 			float:left;
 			display:block;
-						
+			width:25%;
+										
 			@media (min-width: $screen-sm-min){
 				float:none;
+				width:auto;
 				font-size:1.15em;
 				text-align:center;
 				margin-right:0px;
@@ -141,8 +143,9 @@ nav {
 				color:#666;
 				display:block;
 				float:left;
-				//width:40%;
-				
+				width:100%;
+				text-align:center;
+								
 				@include transition(0.4s,all,ease);
 				
 				@media (min-width: $screen-sm-min){					
@@ -192,13 +195,16 @@ nav {
 }
 
 #content {	
+	margin-top:50px;
 
-	section:first-child {	
+	section:first-child {
 		padding-top:80px;
 	}
 
 	@media (min-width: $screen-sm-min){
+		
 		margin-left:120px;
+		margin-top:0;
 		
 		section:first-child {	
 			padding-top:0px;
@@ -208,8 +214,6 @@ nav {
 }
 
 // INTRO
-
-
 
 #intro {
 	padding:2em 0;
@@ -429,34 +433,16 @@ blockquote {
 		font-weight:300;
 	 	font-size:1.4em;
 	 	text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
-	 	
 	}
 	
 	.light {
-		text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
-		
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.6);		
 	}
 	
-	
-	.enlarged {
-	
-	font-size:2.0em;
-	quotes: "\201C""\201D""\2018""\2019";
-	text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
-
-
-	// OPEN QUOTE STYLE			
-	//	&:before {
-	//			
-	//			  color:$super-black;
-	//			  content: open-quote;
-	//			  font-size: 3.0em;
-	//			  line-height: 0.1em;
-	//			  margin-right: 0.25em;
-	//			  vertical-align: -0.4em;
-	//			  text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
-	//		}
-		
+	.enlarged {	
+		font-size:2.0em;
+		quotes: "\201C""\201D""\2018""\2019";
+		text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
 	}
 }
 
@@ -575,7 +561,10 @@ blockquote {
 
 
 .text-padding {
-	padding:50px;
+	padding:0.5em;
+	@media (min-width:$screen-sm-min) {
+		padding:50px;
+	}
 }
 
 .extra-text-padding {
@@ -589,12 +578,12 @@ blockquote {
 
 .small-text-padding-narrow{
 
+	padding:1em;	
+
 	@media (min-width:$screen-sm-min) {
 		padding:20px 60px;
 	}
 	
-
-		padding:40px 60px;
 }
 
 .full-width-image {
