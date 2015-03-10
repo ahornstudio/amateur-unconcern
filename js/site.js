@@ -30,8 +30,7 @@ $(document).ready(function() {
 		    $('.active_section').removeClass('active_section');
 		    $targetElement.addClass('active_section');
 		
-		    //scroll element into view    
-		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+		  	 $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
 		});
 	
 	
@@ -39,6 +38,10 @@ $(document).ready(function() {
 				$(this).mouseenter(function() {
 					$(".active_section").removeClass("active_section");
 					$(this).addClass("active_section");
+				});
+				
+				$(this).on("touchstart click", function() {
+					moveToNextSlide();
 				});
 			} );	
 	
