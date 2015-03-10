@@ -545,17 +545,7 @@ blockquote {
 	}
 	
 	&.light {
-		background:$light-brown;
-		
-//		blockquote {
-//			color:$black;
-//			
-//			p {
-//				color:$black;
-//				
-//			}
-//		}
-		
+		background:$light-brown;		
 	}
 }
 
@@ -568,7 +558,9 @@ blockquote {
 }
 
 .extra-text-padding {
-	padding:100px 50px;
+	@media (min-width:$screen-sm-min) {
+		padding:100px 50px;
+	}
 }
 
 .small-text-padding {
@@ -607,7 +599,7 @@ blockquote {
 .centered {
 	text-align:center;
 			
-	margin-bottom:70px; 	
+	margin-bottom:1em; 	
 	
 	@media (min-width:$screen-sm-min) {
 		picture {
@@ -903,8 +895,39 @@ blockquote {
 		padding:0;
 	
 		li {
-			margin:0.85em 0;
-			text-align:center;
+			font-size:1.2em;
+			margin:0 0 0.2em 0;
+			text-align:left;
+			display:block;
+			width:100%;
+			
+			span.what {
+				width:50%;
+				display:inline-block;
+				padding:0.4em;
+				float:left;
+				text-align:right;
+				font-weight:500;				
+				background:$white;
+			}
+			
+			span.who {	
+				width:50%;
+				display:inline-block;	
+				padding:0.4em;	
+				font-style:italic;
+				font-family:$serif;
+				background:$white;
+				float:right;
+				text-align:left;
+			}
+			
+			&:after {
+				clear:both;
+				content:'';
+				display:table;
+			}
+			
 		}
 	}
 }
