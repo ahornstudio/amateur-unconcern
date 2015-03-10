@@ -2,7 +2,7 @@ pygments: true
 permalink: /:categories/:title
 url: http://photocaptionist.com
 markdown: kramdown
-main_title: "A Photo-Literary Fantasia. By the Photocaptionist"
+main_title: "Amateur Unconcern. A Photo-Literary Fantasia. By the Photocaptionist"
 include: [a, c, j]
 excerpt_separator: ""
 safe: false

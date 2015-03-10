@@ -15,7 +15,7 @@
 
 	<link rel="stylesheet" href="/css/screen.css">
 
-	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="Shortcut Icon" href="http://photocaptionist.com/site/wp-content/themes/photocaption/assets/favicon.ico" type="image/x-icon" />
 	
 	<meta name="copyright" content="Photocaptionist" /> 
 	<meta name="MSSmartTagsPreventParsing" content="true" />  
@@ -27,7 +27,7 @@
 	<!-- opengraph -->	
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://photocaptionist.com" />
+	<meta property="og:url" content="http://amateurunconcern.photocaptionist.com" />
 		
 	<meta property="og:title" content="Amateur Unconcern. A Photo-Literary Fantasia by the Photocaptionist" />	
 	<meta name="twitter:title" content="Amateur Unconcern. A Photo-Literary Fantasia by the Photocaptionist">					
