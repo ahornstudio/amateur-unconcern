@@ -2,49 +2,64 @@ $(document).ready(function() {
 	sizeContent();
 	centerVertical();
 	
-	$("#warning").backstretch("/photos/act2-part6-a.jpg");
+	$("#warning").backstretch("/photos/act2-driving.jpg");
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
+
+	// We bind a new event to our link
+	$("a[href*=twitter]").click(function(e){
+	  e.preventDefault();
+	  var loc = $(this).attr('href');
+	  var title  = encodeURIComponent($(this).attr('title'));
+	  window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+	 
+	});
 	
-	
-	
+	// We bind a new event to our link
+	$("a[href*=facebook]").click(function(e){				 
+	  e.preventDefault();		 
+	  var loc = $(this).attr('href');		 
+	  var title  = encodeURIComponent($(this).attr('title'));
+	  window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+	 
+	});
+		
 	$(window).keydown(function(e) {
 		    
-		    var $targetElement;
-		    //down
-		    if (e.keyCode == 40) {
-		    	e.preventDefault(); //prevent default arrow key behavior
-		    	
-		        $targetElement = $('.active_section').next('section');
-		    }
-		    //up
-		    else if (e.keyCode == 38) {
-		    	e.preventDefault(); //prevent default arrow key behavior
-		    	
-		        $targetElement = $('.active_section').prev('section');
-		    } else {
-		    
-		    return;
-		    
-		    }
-		    
-		    $('.active_section').removeClass('active_section');
-		    $targetElement.addClass('active_section');
-		
-		  	 $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+	    var $targetElement;
+	    //down
+	    if (e.keyCode == 40) {
+	    	e.preventDefault(); //prevent default arrow key behavior
+	    	
+	        $targetElement = $('.active_section').next('section');
+	    }
+	    //up
+	    else if (e.keyCode == 38) {
+	    	e.preventDefault(); //prevent default arrow key behavior
+	    	
+	        $targetElement = $('.active_section').prev('section');
+	    } else {
+	    
+	    return;
+	    
+	    }
+	    
+	    $('.active_section').removeClass('active_section');
+	    $targetElement.addClass('active_section');
+	
+	  	 $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
+	});
+	
+	
+	$("section").each(function() {
+		$(this).mouseenter(function() {
+			$(".active_section").removeClass("active_section");
+			$(this).addClass("active_section");
 		});
-	
-	
-		$("section").each(function() {
-				$(this).mouseenter(function() {
-					$(".active_section").removeClass("active_section");
-					$(this).addClass("active_section");
-				});
-				
-				$(this).on("touchstart click", function() {
-					moveToNextSlide();
-				});
-			} );	
-	
+		
+		$(this).on("touchstart click", function() {
+			moveToNextSlide();
+		});
+	});	
 });
 
 //Every resize of window
@@ -52,6 +67,8 @@ $(window).resize(function() {
 	sizeContent;
 	centerVertical();
 });
+
+
 
 //Dynamically assign height
 function sizeContent() {
@@ -76,29 +93,21 @@ function centerVertical() {
 }
 
 
-
-
-var moveToNextSlide = function() {
-	
-		    var $targetElement;
-		   
-		    $targetElement = $('.active_section').next('section');
-		    
-		    if (!$targetElement.length) {return;}
-		    $('.active_section').removeClass('active_section');
-		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
-			
-			
+var moveToNextSlide = function() {	
+    var $targetElement;
+   
+    $targetElement = $('.active_section').next('section');
+    
+    if (!$targetElement.length) {return;}
+    $('.active_section').removeClass('active_section');
+    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
 }
 
 var moveToPrevSlide = function() {
-	
-		    var $targetElement;
-		    $targetElement = $('.active_section').prev('section');
-		    
-		    if (!$targetElement.length) {return;}
-		    $('.active_section').removeClass('active_section');
-		    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
-					
-			
+    var $targetElement;
+    $targetElement = $('.active_section').prev('section');
+    
+    if (!$targetElement.length) {return;}
+    $('.active_section').removeClass('active_section');
+    $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);	
 }
