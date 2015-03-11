@@ -2,7 +2,6 @@ $(document).ready(function() {
 	sizeContent();
 	centerVertical();
 	
-	
 	//$("#warning").backstretch("/photos/act2-driving.jpg");
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
 
@@ -61,30 +60,7 @@ $(document).ready(function() {
 	$("section").each(function() {
 		$(this).mouseenter(function() {
 			$(".active_section").removeClass("active_section");
-			$(this).addClass("active_section");
-			
-			if ($('section.characters').hasClass('active_section')) {							
-			
-				var audioElement = document.createElement('audio');
-			    audioElement.setAttribute('src', '/assets/intro-sound.mp3');
-			    audioElement.setAttribute('autoplay', 'autoplay');
-			    //audioElement.load()
-			
-			    $.get();
-			
-			    audioElement.addEventListener("load", function() {
-			        audioElement.play();
-			    }, true);
-						
-				console.log('yes');				
-				audioElement.play();
-				
-				$('.mute').click(function() {
-				     audioElement.pause();
-				     $('.characters').removeClass('active_section');
-				});					
-			}			
-															
+			$(this).addClass("active_section");																				
 		});
 		
 		$(this).on("touchstart click", function() {

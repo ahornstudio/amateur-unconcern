@@ -617,6 +617,12 @@ blockquote {
 	
 }
 
+.characters {
+	audio {
+		float:right;
+	}
+}
+
 .centered {
 	text-align:center;
 			
@@ -758,6 +764,10 @@ blockquote {
 			color:$light-grey;
 		}
 	
+		.black {
+			color:$black;
+		}
+			
 		&:hover {
 		
 			figcaption {
