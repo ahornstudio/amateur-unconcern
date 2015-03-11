@@ -2,6 +2,7 @@ $(document).ready(function() {
 	sizeContent();
 	centerVertical();
 	
+	
 	//$("#warning").backstretch("/photos/act2-driving.jpg");
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
 
@@ -13,6 +14,13 @@ $(document).ready(function() {
 	  window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
 	 
 	});
+
+	/*
+	if ($('.characters').hasClass('active_section')) {
+		console.log('yes');
+	} else {
+		console.log('No');	
+	}*/
 	
 	// We bind a new event to our link
 	$("a[href*=facebook]").click(function(e){				 
@@ -22,7 +30,7 @@ $(document).ready(function() {
 	  window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
 	 
 	});
-		
+				
 	$(window).keydown(function(e) {
 		    
 	    var $targetElement;
@@ -48,18 +56,42 @@ $(document).ready(function() {
 	
 	  	 $('html, body').clearQueue().animate({scrollTop: $targetElement.offset().top }, 1200);
 	});
-	
-	
+		
+		
 	$("section").each(function() {
 		$(this).mouseenter(function() {
 			$(".active_section").removeClass("active_section");
 			$(this).addClass("active_section");
+			
+			if ($('section.characters').hasClass('active_section')) {							
+			
+				var audioElement = document.createElement('audio');
+			    audioElement.setAttribute('src', '/assets/intro-sound.mp3');
+			    audioElement.setAttribute('autoplay', 'autoplay');
+			    //audioElement.load()
+			
+			    $.get();
+			
+			    audioElement.addEventListener("load", function() {
+			        audioElement.play();
+			    }, true);
+						
+				console.log('yes');				
+				audioElement.play();
+				
+				$('.mute').click(function() {
+				     audioElement.pause();
+				     $('.characters').removeClass('active_section');
+				});					
+			}			
+															
 		});
 		
 		$(this).on("touchstart click", function() {
 			moveToNextSlide();
 		});
 	});	
+			
 });
 
 //Every resize of window
