@@ -309,6 +309,7 @@ nav {
 .characters {
 
 	h4 {
+		font-size:1.3em;
 		font-weight:normal;
 		font-family:$sans-serif;
 	}
@@ -512,6 +513,17 @@ blockquote {
 			text-decoration:none;
 		}
 	}	
+	
+	overflow:hidden;
+		
+	&.bottom {
+		@media (min-width: $screen-sm-min) {
+			position:absolute;
+			bottom:1em;
+			width:auto;
+			left:53%;
+		}			
+	}
 }
 
 .videoInner {
@@ -670,7 +682,7 @@ blockquote {
 	text-transform:uppercase;
 	font-family:$sans-serif;
 	font-weight:bold;
-	margin-right:10px;
+	margin-right:0.2em;
 }
 
 .noise {

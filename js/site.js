@@ -2,7 +2,7 @@ $(document).ready(function() {
 	sizeContent();
 	centerVertical();
 	
-	$("#warning").backstretch("/photos/act2-driving.jpg");
+	//$("#warning").backstretch("/photos/act2-driving.jpg");
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
 
 	// We bind a new event to our link
