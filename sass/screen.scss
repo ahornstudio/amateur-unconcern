@@ -309,10 +309,12 @@ nav {
 .characters {
 
 	h4 {
+		font-weight:normal;
 		font-family:$sans-serif;
 	}
 
 	p {
+		font-size:1.15em;		
 		font-family:$sans-serif;	
 	}
 
@@ -323,6 +325,7 @@ nav {
 		list-style:none;
 		
 		li {
+			font-size:1.15em;
 			font-family:$sans-serif;
 			strong {
 				font-weight:600;
@@ -919,7 +922,12 @@ blockquote {
 				font-family:$serif;
 				background:$white;
 				float:right;
+				
 				text-align:left;
+				
+				em {
+					font-style:normal;
+				}				
 			}
 			
 			&:after {
