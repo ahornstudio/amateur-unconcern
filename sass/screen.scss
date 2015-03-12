@@ -229,6 +229,11 @@ nav {
 }
 
 .welcome {
+
+	audio {
+		margin-bottom:1em;
+	}
+
 	border:1px solid rgba(#473c38,0.4);
 	
 	background:#c6af82;
@@ -619,6 +624,7 @@ blockquote {
 
 .characters {
 	audio {
+		margin:0 0 1em 1em;
 		float:right;
 	}
 }
