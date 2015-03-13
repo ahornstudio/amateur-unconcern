@@ -2,16 +2,22 @@ $(document).ready(function() {
 	sizeContent();
 	centerVertical();
 	
+	function isTouchDevice(){
+	    return typeof window.ontouchstart !== 'undefined';
+	}
+	
 	//$("#warning").backstretch("/photos/act2-driving.jpg");
 	$("#act4-full").backstretch("/photos/act4-part1.jpg");	
 
 	// We bind a new event to our link
 	$("a[href*=twitter]").click(function(e){
-	  e.preventDefault();
-	  var loc = $(this).attr('href');
-	  var title  = encodeURIComponent($(this).attr('title'));
-	  window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
-	 
+		var current_width = $(window).width();	
+	  if(current_width > 480) {	
+		e.preventDefault();
+		var loc = $(this).attr('href');
+		var title  = encodeURIComponent($(this).attr('title'));
+		window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+		}	 
 	});
 
 	/*

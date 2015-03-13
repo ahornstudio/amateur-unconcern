@@ -91,7 +91,6 @@ nav {
 					float:none;		
 					width:45px;
 					height:77px;
-					
 					@include at2x('p-logo',45px,81px);
 				}
 			}
@@ -101,7 +100,7 @@ nav {
 	ul {
 		float:right;
 		text-align:right;
-		width:80%;
+		width:70%;
 		
 		@media (min-width: $screen-sm-min){
 			float:none;
@@ -128,7 +127,7 @@ nav {
 
 			float:left;
 			display:block;
-			width:25%;
+			width:24%;
 										
 			@media (min-width: $screen-sm-min){
 				float:none;
@@ -175,16 +174,29 @@ nav {
 
 .share {
 	margin-top:0em;
+	float:left;
+	width:30px;
+	
+	@media (min-width: $screen-sm-min){
+		float:none;
+		width:auto;
+	}
 	
 	div {
 		a {
 			text-shadow:0 0 0 0;
 			border-top:none;			
 			display:block;
-			width:59px;
-			padding:10px;
+			padding:4px;
+			width:30px;
 			text-align:center;
-			float:left;			
+
+			@media (min-width: $screen-sm-min){
+				padding:10px;
+				width:58px;
+				text-align:center;
+				float:left;			
+			}
 			border-bottom:none;
 			
 			&:hover {
@@ -193,7 +205,10 @@ nav {
 		}
 		
 		img {
-			height:28px;
+			height:20px;
+			@media (min-width: $screen-sm-min){
+				height:28px;
+			}
 		}
 	}	
 }
@@ -217,7 +232,7 @@ nav {
 
 #intro {
 	padding:2em 0;
-	background:url(../assets/flower_tile_large.jpg);
+	background:#6f5d49 url(../assets/flower_tile_large.jpg);
 }
 
 #intro .welcome {
@@ -450,6 +465,12 @@ blockquote {
 	 	text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
 	}
 	
+	span {
+		text-transform:uppercase;
+		font-size:95%;
+		letter-spacing:1px;
+	}
+	
 	.light {
 		text-shadow: 0px 1px 0px rgba(0,0,0,0.6);		
 	}
@@ -583,6 +604,12 @@ blockquote {
 	}
 }
 
+#driving {
+	margin:0 auto;
+	text-align:center;
+	background:$black;
+}
+
 .extra-text-padding {
 	@media (min-width:$screen-sm-min) {
 		padding:100px 50px;
@@ -667,9 +694,11 @@ blockquote {
 	}
 }
 
-.fill {
+.film{
+	background:$super-black;
 	min-height:100%;
 	height:100%;
+	border-bottom:none;
 }
 
 .vcenter {

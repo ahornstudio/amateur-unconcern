@@ -14,7 +14,7 @@
 	{% endfor %}
 	</ul>
 	
-	<div class="share hidden-xs">
+	<div class="share">
 
 		<div class="twitter"><a href="http://twitter.com/home/?status=Amateur Unconcern http%3A%2F%2Fphotocaptionist.com%2F%20-%20 via @photocaptionist"><img src="/assets/twitter-icon.svg"></a>
 		</div>
