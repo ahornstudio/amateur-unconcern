@@ -3,7 +3,7 @@ $(document).ready(function() {
 	centerVertical();
 	
 	function isTouchDevice(){
-	    return typeof window.ontouchstart !== 'undefined';
+	    //return typeof window.ontouchstart !== 'undefined';
 	}
 	
 	//$("#warning").backstretch("/photos/act2-driving.jpg");
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		var loc = $(this).attr('href');
 		var title  = encodeURIComponent($(this).attr('title'));
-		window.open(loc + '&text=' + title + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+		window.open(loc + '&', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
 		}	 
 	});
 
@@ -107,7 +107,6 @@ function centerVertical() {
     	$(".vertical-center").css("margin-top",newmargin);
     }
 }
-
 
 var moveToNextSlide = function() {	
     var $targetElement;

@@ -16,7 +16,10 @@
 	
 	<div class="share">
 
-		<div class="twitter"><a href="http://twitter.com/home/?status=Amateur Unconcern http%3A%2F%2Fphotocaptionist.com%2F%20-%20 via @photocaptionist"><img src="/assets/twitter-icon.svg"></a>
+		<div class="twitter">		
+			<a href="https://twitter.com/share?url=http%3A%2F%2Famateurunconcern.photocaptionist.com&via=photocaptionist&text=Amateur%20Unconcern">
+				<img src="/assets/twitter-icon.svg"></a>
+			</a>
 		</div>
 				
 		<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Famateurunconcern.photocaptionist.com%2F"><img src="/assets/facebook-icon.svg"></a></div>
@@ -24,3 +27,5 @@
 	</div>
 	
 </nav>
+
+
