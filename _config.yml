@@ -23,3 +23,5 @@ navigation:
   url: /act5
 - text: Credits
   url: /credits
+- text: Press
+  url: /press
