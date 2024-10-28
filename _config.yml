@@ -1,6 +1,6 @@
 pygments: true
 permalink: /:categories/:title
-url: http://photocaptionist.com
+url: https://ahornstudio.github.io/amateur-unconcern
 markdown: kramdown
 main_title: "Amateur Unconcern. A Photo-Literary Fantasia. By the Photocaptionist"
 include: [a, c, j]
