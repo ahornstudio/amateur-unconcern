@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="115px" viewBox="0 0 56 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.201675666 L55.4027812,0.201675666 L55.4027812,114.254099 L0,114.254099 L0,0.201675666 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Imported-Layers" sketch:type="MSLayerGroup">
+            <g>
+                <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M14.1341514,114.254099 L14.1341514,60.7496144 L-0.00429478924,60.7496144 L-0.00429478924,41.4831899 L14.1341514,41.4831899 L14.1341514,25.0255575 C14.1341514,12.0896523 22.5089904,0.201675666 41.7582358,0.201675666 C49.5575731,0.201675666 55.3297698,0.966148151 55.3297698,0.966148151 L54.8745222,18.9441359 C54.8745222,18.9441359 49.00784,18.8925985 42.5742458,18.8925985 C35.6424559,18.8925985 34.5086316,22.0793321 34.5086316,27.3962812 L34.5086316,41.4831899 L55.407076,41.4831899 L54.4879911,60.7496144 L34.5086316,60.7496144 L34.5086316,114.254099 L14.1341514,114.254099 Z" id="Fill-1" fill="#666666" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
