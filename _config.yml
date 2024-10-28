@@ -8,10 +8,9 @@ excerpt_separator: ""
 safe: false
 navigation:
 - text: Title
-  url: /
+  url: "{{ site.baseurl }}/"
 - text: Intro
-  url: /intro
-- text: Act I
+  url: "{{ site.baseurl }}/intro"- text: Act I
   url: /act1
 - text: Act II
   url: /act2
@@ -25,3 +24,5 @@ navigation:
   url: /credits
 - text: Press
   url: /press
+
+baseurl: "/amateur-unconcern"
