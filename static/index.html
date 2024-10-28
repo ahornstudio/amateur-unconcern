@@ -57,16 +57,14 @@
 
 	<script type="text/javascript" src="//use.typekit.net/xnw3anf.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
- 
-	<script type="text/javascript" src="/js/modernizr-custom.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/modernizr-custom.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
 	
-	<script language="javascript" type="text/javascript" src="/js/polyfill.js"></script>	
-	<script language="javascript" type="text/javascript" src="/js/backstretch.min.js"></script>
-	<script language="javascript" type="text/javascript" src="/js/lazysizes.min.js"></script>	
-	<script language="javascript" type="text/javascript" src="/js/jquery.caption.min.js"></script>	
-	<script language="javascript" type="text/javascript" src="/js/site.js"></script>
- 
+		<script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/polyfill.js"></script>	
+		<script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/backstretch.min.js"></script>
+		<script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/lazysizes.min.js"></script>	
+		<script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/jquery.caption.min.js"></script>	
+		<script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/site.js"></script>
 	 <script type="text/javascript">
 	 var _gaq = _gaq || [];
 	 _gaq.push(['_setAccount', 'UA-23138362-33']);
@@ -82,85 +80,33 @@
  
 </head> 
 <body id="">
-
-<nav>			
+											<nav>			
 	
-	<h1 id="sitename"><a href="http://photocaptionist.com" title="Photocaptionist" target="_blank">Amateur Unconcern</a></h1>	
+											<h1 id="sitename"><a href="http://photocaptionist.com" title="Photocaptionist" target="_blank">Amateur Unconcern</a></h1>	
 												
-	<ul>
+											<ul>
+																		{% for item in site.navigation %}
+																		<li>
+																						<a href="{{ site.baseurl }}{{ item.url }}" class="{% if page.url == item.url %}active{% endif %}">
+																										{{ item.text }}
+																						</a>
+																		</li>
+																		{% endfor %}
+														</ul>
 	
-	    
-	    
-	        
-	    
-	    <li><a href="/" class="active">
-	        Title
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/intro" class="">
-	        Intro
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/act1" class="">
-	        Act I
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/act2" class="">
-	        Act II
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/act3" class="">
-	        Act III
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/act4" class="">
-	        Act IV
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/act5" class="">
-	        Act V
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/credits" class="">
-	        Credits
-	    </a></li>
-	
-	    
-	    
-	    <li><a href="/press" class="">
-	        Press
-	    </a></li>
-	
-	</ul>
-	
-	<div class="share">
+											<div class="share">
 
-		<div class="twitter">		
-			<a href="https://twitter.com/share?url=http%3A%2F%2Famateurunconcern.photocaptionist.com&via=photocaptionist&text=Amateur%20Unconcern">
-				<img src="/assets/twitter-icon.svg"></a>
-			</a>
-		</div>
+												<div class="twitter">		
+													<a href="https://twitter.com/share?url=http%3A%2F%2Famateurunconcern.photocaptionist.com&via=photocaptionist&text=Amateur%20Unconcern">
+														<img src="/assets/twitter-icon.svg"></a>
+													</a>
+												</div>
 				
-		<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Famateurunconcern.photocaptionist.com%2F"><img src="/assets/facebook-icon.svg"></a></div>
+												<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Famateurunconcern.photocaptionist.com%2F"><img src="/assets/facebook-icon.svg"></a></div>
 
-	</div>
+											</div>
 	
 </nav>
-
 
 
 		
